@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-8">
+        <input type="text" ng-model="newTask"/>
+        <button class="btn btn-danger btn-sm"
+                ng-click="addTask(newTask)">Add...</button>
+    </div>
+</div>
+
+        <div class="row">&nbsp; </div>
+
+<div class="row">
+    <div class="col-md-8">
+        <ul>
+            <p ng-if="task.complete === false"
+               ng-repeat="task in tasks track by $index">
+                <alert close="completeTask(task)">
+                    <input ng-change="saveTasks()"
+                           type="text"
+                           ng-model="task.description">
+                    <input type="text"
+                           ng-model="task.dueDate"
+                           datepicker-popup>
+                </alert>
+            </p>
+        </ul>
+    </div>
+</div>
