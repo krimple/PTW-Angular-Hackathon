@@ -1,6 +1,6 @@
 {
-  "name": "classstuff",
-  "version": "0.0.0",
+  "name": "Chariot AngularJS Hackathon",
+  "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
